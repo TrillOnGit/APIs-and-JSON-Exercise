@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hAIe8TSMsyRcxEZc+0wlMc1na9zmQsFcsbJ4iu1yruc9K+Lg16vKoAnXjzhczg0HvrgI+0aGqb0ekooktJWb7Q==",
+  "dgSpecHash": "5nHBYZal6IIDStSn31TO5ATrQVRB8otA8ZYgC63MDDl5Lm5Ve6ZATGgH8O8+8B6wME313H8f3jD4zadnxwV1yg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\OneDrive\\Desktop\\APIs-and-JSON-Exercise\\APIsAndJSON\\APIsAndJSON.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/APIsAndJSON.csproj",
+  "expectedPackageFiles": [
+    "/home/trillion/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/trillion/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.20/microsoft.netcore.app.host.linux-x64.6.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

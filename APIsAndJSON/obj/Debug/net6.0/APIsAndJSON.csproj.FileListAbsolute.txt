@@ -1,0 +1,17 @@
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/bin/Debug/net6.0/APIsAndJSON
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/bin/Debug/net6.0/APIsAndJSON.deps.json
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/bin/Debug/net6.0/APIsAndJSON.runtimeconfig.json
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/bin/Debug/net6.0/APIsAndJSON.dll
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/bin/Debug/net6.0/APIsAndJSON.pdb
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.csproj.AssemblyReference.cache
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.GeneratedMSBuildEditorConfig.editorconfig
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.AssemblyInfoInputs.cache
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.AssemblyInfo.cs
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.csproj.CoreCompileInputs.cache
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.csproj.CopyComplete
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.dll
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/refint/APIsAndJSON.dll
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.pdb
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/APIsAndJSON.genruntimeconfig.cache
+/home/trillion/Repos/APIs-and-JSON-Exercise/APIsAndJSON/obj/Debug/net6.0/ref/APIsAndJSON.dll
