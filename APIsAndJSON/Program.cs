@@ -5,23 +5,29 @@ namespace APIsAndJSON
 {
     public class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             //Ron and Ye
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine(RonVSKanyeAPI.GetRonVoice());
-                Console.WriteLine(RonVSKanyeAPI.GetYeVoice());
+                var ronRequest = RonVSKanyeAPI.GetRonVoice();
+                var yeRequest = RonVSKanyeAPI.GetYeVoice();
+                Console.WriteLine(await ronRequest);
+                Console.WriteLine(await yeRequest);
             }
     
             //Weather
-            string city = "Pittsburgh";
+            string city = "Delmont";
             
             Console.WriteLine("--------------------------");
             Console.WriteLine($"The city of {city} has the following weather information:");
-            Console.WriteLine(OpenWeatherMapAPI.DescriptionGet(city));
-            Console.WriteLine(OpenWeatherMapAPI.TempGet(city));
-            Console.WriteLine(OpenWeatherMapAPI.PressureGet(city));
+            var cityDesc = OpenWeatherMapApi.DescriptionGet(city);
+            var cityTemp = OpenWeatherMapApi.TempGet(city);
+            var cityPress = OpenWeatherMapApi.PressureGet(city);
+            
+            Console.WriteLine(await cityDesc);
+            Console.WriteLine(await cityTemp);
+            Console.WriteLine(await cityPress);
             Console.WriteLine("--------------------------");
         }
     }

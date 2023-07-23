@@ -8,43 +8,42 @@ using Newtonsoft.Json.Linq;
 
 namespace APIsAndJSON
 {
-    internal class OpenWeatherMapAPI
+    internal static class OpenWeatherMapApi
     {
         //Weather Project
 
-        public static JToken? WeatherAPICall(string field, string cityName)
+        private static async Task<JToken?> WeatherApiCall(string field, string cityName)
         {
             var client = new HttpClient();
             
-            var weatherKey = JObject.Parse(File.ReadAllText("appsettings.json")).GetValue("DefaultKey")?.ToString();
-            var weatherURL =
+            var weatherKey = JObject.Parse(await File.ReadAllTextAsync("appsettings.json")).GetValue("DefaultKey")?.ToString();
+            var weatherUrl =
                 $"https://api.openweathermap.org/data/2.5/weather?q={cityName}&appid={weatherKey}&units=imperial";
-            var openWeatherCall = client.GetStringAsync(weatherURL).Result;
+            var openWeatherCall = await client.GetStringAsync(weatherUrl);
 
             return JObject.Parse(openWeatherCall).GetValue(field);
         }
         
-        public static string TempGet(string cityName)
+        public static async Task<string> TempGet(string cityName)
         {
-            var weatherBase = WeatherAPICall("main", cityName);
+            var weatherBase = await WeatherApiCall("main", cityName);
             var weatherTempF = Math.Round(weatherBase.Value<double>("temp"), 2);
 
             return $"{weatherTempF.ToString(CultureInfo.CurrentCulture)} degrees Fahrenheit.";
         }
         
-        public static string PressureGet(string cityName)
+        public static async Task<string> PressureGet(string cityName)
         {
-            var weatherBase = WeatherAPICall("main", cityName);
+            var weatherBase = await WeatherApiCall("main", cityName);
             var weatherPressureF = Math.Round(weatherBase.Value<double>("pressure"), 2);
             
             return $"{weatherPressureF.ToString(CultureInfo.CurrentCulture)} points of pressure.";
         }
         
-        public static string DescriptionGet(string cityName)
+        public static async Task<string> DescriptionGet(string cityName)
         {
-            var weatherBase = WeatherAPICall("weather", cityName);
+            var weatherBase = await WeatherApiCall("weather", cityName);
             var weatherDesc = weatherBase[0].Value<string>("description");
-            //Console.WriteLine(weatherDesc);
             return $"The forecast is {weatherDesc}.";
         }
     }
